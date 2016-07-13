@@ -2,3 +2,60 @@ html {
     min-width: 1350px;
     background-color: whitesmoke;
 }
+.button {
+    border-radius: 2px;
+    width: 167px;
+    height: 32px;
+    font: 700 16px LabGrotesque;
+    text-transform: uppercase;
+}
+
+.blackwood-theme {
+    color: #ffffff;
+    background-color: #00b0eb;
+    box-shadow: 0px 1px 0.5px 0.50px rgba(53, 112, 155, 0.75);
+}
+
+.switch {
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+}
+
+.switch-button--radio {
+    visibility: hidden;
+    position: absolute;
+}
+
+.switch-button--radio:checked {
+    background-color: #68a2cc;
+}
+
+.switch-button--text {
+    color: #ffffff;
+    font: 700 14px LabGrotesque;
+    text-align: center;
+    line-height: 32px;
+    display: block;
+    width: 100%;
+}
+
+.switch-button {
+    background: -webkit-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: -moz-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: -o-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: -ms-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: linear-gradient(0deg, #4194d0 0%, #78b0d9 100%);
+    position: relative;
+    width: 78px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.switch-button:checked {
+    background-color: #68a2cc;
+}
+
+.switch-button:checked {
+    background-color: #68a2cc;
+}

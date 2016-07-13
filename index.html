@@ -60,49 +60,137 @@
     <h1 class="table__title">Campaigns</h1>
     <div class="table__row">
       <button type="button" name="button" class="button blackwood-theme">Create new</button>
-      <div class="switch blackwood-theme">
-        <label for="list">List</label>
-        <input type="radio" name="name" value="list">
-        <label for="timeline">Timeline</label>
-        <input type="radio" name="name" value="timeline">
+      <div class="switch">
+        <label class="switch-button">
+            <span class="switch-button--text">List</span>
+            <input class="switch-button--radio" type="radio" name="name" value="list">
+        </label>
+        <label class="switch-button">
+            <span class="switch-button--text">Timeline</span>
+            <input class="switch-button--radio" type="radio" name="name" value="timeline">
+        </label>
       </div>
     </div>
-    <table class="table__content">
-      <tr>
-        <th>
+    <table class="table__content" cellpadding="0" cellspacing="0" border="0">
+      <tr class="table-row-header">
+        <th class="table-row-header table-row-header--campaign">
           Campaign name
         </th>
-        <th>
+        <th class="table-row-header table-row-header--status">
 Status
         </th>
-        <th>
+        <th class="table-row-header table-row-header--marketing">
 Marketing goal
         </th>
-        <th>
+        <th class="table-row-header table-row-header--tags">
 Tags
         </th>
-        <th>
+        <th class="table-row-header table-row-header--date active">
 Date
         </th>
       </tr>
       <tr>
-        <td>
+        <td class="table-row-body">
 Campaign 27
         </td>
-        <td>
+        <td class="table-row-body status-indicator status-indicator--orange">
 Prediction
         </td>
-        <td>
+        <td class="table-row-body">
 Raise awarness
         </td>
-        <td>
+        <td class="table-row-body">
 Brand BW7
         </td>
-        <td>
+        <td class="table-row-body">
 01/06/16-31/08/16
         </td>
       </tr>
-      <!-- 5 remaining -->
+        <tr>
+        <td class="table-row-body">
+Campaign 3
+        </td>
+        <td class="table-row-body status-indicator status-indicator--orange">
+Prediction
+        </td>
+        <td class="table-row-body">
+Gain new subscribers
+        </td>
+        <td class="table-row-body">
+Product Newsletter
+        </td>
+        <td class="table-row-body">
+01/02/16-30/02/16
+        </td>
+      </tr>
+        <tr>
+        <td class="table-row-body">
+Campaign 9
+        </td>
+        <td class="table-row-body status-indicator status-indicator--orange">
+Prediction
+        </td>
+        <td class="table-row-body">
+Gain new subscribers
+        </td>
+        <td class="table-row-body">
+Product Newsletter
+        </td>
+        <td class="table-row-body">
+15/01/16-31/03/16
+        </td>
+      </tr>
+        <tr>
+        <td class="table-row-body">
+Campaign 22
+        </td>
+        <td class="table-row-body status-indicator status-indicator--green">
+Running
+        </td>
+        <td class="table-row-body">
+Raise awarness
+        </td>
+        <td class="table-row-body">
+Brand BW7: Product RTPM
+        </td>
+        <td class="table-row-body">
+01/06/16-31/08/16
+        </td>
+      </tr>
+        <tr>
+        <td class="table-row-body">
+Campaign 4
+        </td>
+        <td class="table-row-body status-indicator status-indicator--green">
+Running
+        </td>
+        <td class="table-row-body">
+Raise sales
+        </td>
+        <td class="table-row-body">
+Product: RTPM
+        </td>
+        <td class="table-row-body">
+15/12/16-15/01/16
+        </td>
+      </tr>
+        <tr>
+        <td class="table-row-body">
+Campaign 2
+        </td>
+        <td class="table-row-body status-indicator status-indicator--blue">
+Finished
+        </td>
+        <td class="table-row-body">
+Raise awarness
+        </td>
+        <td class="table-row-body">
+Product: RTPM
+        </td>
+        <td class="table-row-body">
+01/12/16-31/12/16
+        </td>
+      </tr>
     </table>
   </section>
   <!-- End of Table -->

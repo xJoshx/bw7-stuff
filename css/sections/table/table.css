@@ -1,0 +1,105 @@
+
+.table__title {
+    color: #434242;
+    font: 400 20px LabGrotesque;
+    margin-bottom: 30px;
+}
+
+.table__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;    
+}
+
+.table {
+    margin: 0 75px 65px;
+    display: block;
+}
+
+.table__content {
+    width: 100%;
+    border: 1px solid #e8e8e8;
+}
+
+.table-row-body {
+    padding: 10px 20px;
+    color: #6e6d6d;
+    font: 400 14px LabGrotesque;
+    text-align: left;
+    position: relative;
+}
+
+.table-row-body.status-indicator {
+    padding-left: 40px;
+}
+
+.status-indicator::before {
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;    
+}
+
+.status-indicator.status-indicator--orange::before {
+    background-color: #e6a05e;
+}
+
+.status-indicator.status-indicator--green::before {
+    background-color: #35a45b;
+}
+
+.status-indicator.status-indicator--blue::before {
+    background-color: #00b0eb;
+}
+
+.table-row-header {
+    background-color: #e8e8e8;
+    color: #434242;
+    font: 500 14px LabGrotesque;
+    position: relative;
+    text-align: left;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.table-row-header::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background: url(assets/Rektangel-8.png);
+    width: 17px;
+    height: 10px;
+}
+
+.table-row-header.active::after {
+    background: url(assets/Rektangel-8-kopier-4.png);
+}
+
+.table-row-header--campaign {
+    min-width: 250px;
+}
+
+.table-row-header--status {
+    min-width: 170px;
+}
+
+.table-row-header--marketing {
+    min-width: 220px;
+}
+
+.table-row-header--tags {
+    min-width: 380px;
+}
+
+.table-row-header--date {
+    min-width: 170px;
+}
