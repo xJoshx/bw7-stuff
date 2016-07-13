@@ -3,22 +3,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: 72px;
 }
 
 .header-links__link {
     width: 155px;
     color: #ffffff;
-    font: 400 20px / 72px LabGrotesque;
+    font: 400 20px LabGrotesque;
+    line-height: 72px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .header__logo {
     display: block;
-    width: 79px;
+    width: auto;
+    margin: 12px 50px 13px 15px;
+    height: 54px;
 }
 
 .header-links {
     display: flex;
     flex-direction: row;
+    flex-basis: 70%;
 }
 
 .header-links__link.active {
@@ -27,16 +34,17 @@
 
 .header-profile {
     width: 106px;
+    padding-top: 15px;
 }
 
 .header-profile__name {
     color: #ffffff;
-    font: 500 18px / 70px LabGrotesque;
+    font: 500 18px LabGrotesque;
     text-align: center;
 }
 
 .header-profile__settings {
     color: #68a2cc;
-    font: 500 14px / 70px LabGrotesque;
+    font: 500 14px LabGrotesque;
     text-align: center;
 }

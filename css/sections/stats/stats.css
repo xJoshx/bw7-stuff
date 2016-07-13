@@ -1,0 +1,65 @@
+
+.stats {
+    height: 250px;
+    margin: 80px 0 65px 75px;
+    display: block;
+}
+
+.stats__title {
+    color: #434242;
+    font: 400 20px LabGrotesque;
+    margin-bottom: 25px;
+}
+
+.stats__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat {
+    width: 186px;
+    background-color: #ffffff;
+    margin-right: 25px;
+    box-shadow: 1px 2px 0px 0.00px rgba(219, 219, 219, 0.75);
+}
+
+.stat__title {
+    display: block;
+    background-color: #e8e8e8;
+    padding: 10px 20px;
+    color: #434242;
+    font: 500 14px LabGrotesque;
+    height: 33px;
+    box-sizing: border-box;
+    line-height: 14px;
+}
+
+.stat-content {
+    padding: 30px 15px;
+}
+
+.stat-content-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-content-item:first-child {
+    margin-bottom: 30px;
+}
+
+.stat-content-item__title {
+    color: #434242;
+    font: 400 24px LabGrotesque;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.stat-content-item__title--small {
+    font-size: 14px;
+}
+
+.stat-content-item__subtitle {
+    color: #68a2cc;
+    font: 400 12px LabGrotesque;
+    text-align: center;
+}
