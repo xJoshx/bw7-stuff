@@ -34,7 +34,8 @@
 .materials-list-wrapper-image {
     height: 122px;
     overflow: hidden;
-    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
 }
 
 .materials-list-wrapper-image img {
@@ -60,4 +61,56 @@
 .materials-list-item-content {
     padding: 15px 20px 20px;
     background-color: #ffffff;
+}
+
+.image-material-1 {
+    background: url("../../../assets/Material 1.png") center top no-repeat;
+    background-size: cover;
+}
+
+.image-material-2 {
+    background: url("../../../assets/Material 2.png") center center no-repeat;
+    background-size: cover;
+}
+
+.image-material-3 {
+    background: url("../../../assets/Material 3.png") center top no-repeat;
+    background-size: cover;
+}
+
+.image-material-4 {
+    background: url("../../../assets/Material 4.png") center center no-repeat;
+    background-size: contain;
+}
+
+.video-player {
+
+}
+
+.video-player::before {
+    content: '';
+    width: 43px;
+    height: 43px;
+    background: url(assets/Ellipse-1.png);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.video-player::after {
+    content: '';
+    width: 17px;
+    height: 20px;
+    background: url(assets/Rektangel-4.png) center center no-repeat;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 5px;
+    cursor: pointer;
 }

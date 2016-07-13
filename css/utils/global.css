@@ -1,13 +1,14 @@
 html {
     min-width: 1350px;
-    background-color: whitesmoke;
+    background-color: whitesmoke;s
 }
 .button {
     border-radius: 2px;
     width: 167px;
     height: 32px;
-    font: 700 16px LabGrotesque;
+    font: 400 16px LabGrotesque;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .blackwood-theme {
@@ -22,13 +23,34 @@ html {
     width: 160px;
 }
 
-.switch-button--radio {
-    visibility: hidden;
-    position: absolute;
+.switch-button input {
+	cursor: pointer;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+    top: 0;
 }
 
-.switch-button--radio:checked {
-    background-color: #68a2cc;
+.switch-button label {
+    background: -webkit-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: -moz-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: -o-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: -ms-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
+    background: linear-gradient(0deg, #4194d0 0%, #78b0d9 100%); 
+    width: 78px;
+    height: 32px;
+    display: block;
+}
+
+.switch-button input:checked~label {
+    background: #68a2cc;
+    color: rgba(231, 230, 230, 0.82);
+}
+
+.switch-button input:checked~label .switch-button--text {
+    color: rgba(231, 230, 230, 0.82);
 }
 
 .switch-button--text {
@@ -41,21 +63,9 @@ html {
 }
 
 .switch-button {
-    background: -webkit-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
-    background: -moz-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
-    background: -o-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
-    background: -ms-linear-gradient(90deg, #4194d0 0%, #78b0d9 100%);
-    background: linear-gradient(0deg, #4194d0 0%, #78b0d9 100%);
     position: relative;
     width: 78px;
     height: 32px;
     cursor: pointer;
-}
-
-.switch-button:checked {
-    background-color: #68a2cc;
-}
-
-.switch-button:checked {
-    background-color: #68a2cc;
+    display: block;
 }

@@ -1,295 +1,191 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Blackwood</title>
-    <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-  <!-- Header -->
-  <header class="header">
-    <img src="./assets/bw7_logo_white.png" alt="bw7 logo" class="header__logo" />
-    <ul class="header-links">
-      <li class="header-links__link">Predict</li>
-      <li class="header-links__link active">Manage</li>
-      <li class="header-links__link">Evaluate</li>
-    </ul>
-    <div class="header-profile">
-      <span class="header-profile__name">Client name</span>
-      <span class="header-profile__settings">Account settings</span>
-    </div>
-  </header>
-  <!-- End of Header -->
+    <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8"> </head>
 
-  <!-- Stats -->
-  <section class="stats">
-    <h1 class="stats__title">KPI status</h1>
-    <ul class="stats__list">
-      <li class="stat">
-        <h2 class="stat__title">Raise sales</h2>
-        <ul class="stat-content">
-          <li class="stat-content-item">
-            <h3 class="stat-content-item__title">2.750.000</h3>
-            <span class="stat-content-item__subtitle">Media generated sales</span>
-          </li>
-          <li class="stat-content-item">
-            <h3 class="stat-content-item__title stat-content-item__title--small">1.500.000</h3>
-            <span class="stat-content-item__subtitle">Spend</span>
-          </li>
+<body>
+    <!-- Header -->
+    <header class="header"> <img src="./assets/bw7_logo_white.png" alt="bw7 logo" class="header__logo" />
+        <ul class="header-links">
+            <li class="header-links__link">Predict</li>
+            <li class="header-links__link active">Manage</li>
+            <li class="header-links__link">Evaluate</li>
         </ul>
-      </li>
-      <li class="stat">
-        <h2 class="stat__title">Gain new subscribers</h2>
-        <ul class="stat-content">
-          <li class="stat-content-item">
-            <h3 class="stat-content-item__title">220.000</h3>
-            <span class="stat-content-item__subtitle">Media generated subscribers</span>
-          </li>
-          <li class="stat-content-item">
-            <h3 class="stat-content-item__title stat-content-item__title--small">70.000</h3>
-            <span class="stat-content-item__subtitle">Spend</span>
-          </li>
+        <div class="header-profile"> <span class="header-profile__name">Client name</span> <span class="header-profile__settings">Account settings</span> </div>
+    </header>
+    <!-- End of Header -->
+    <!-- Stats -->
+    <section class="stats">
+        <h1 class="stats__title">KPI status</h1>
+        <ul class="stats__list">
+            <li class="stat">
+                <h2 class="stat__title">Raise sales</h2>
+                <ul class="stat-content">
+                    <li class="stat-content-item">
+                        <h3 class="stat-content-item__title">2.750.000</h3> <span class="stat-content-item__subtitle">Media generated sales</span> </li>
+                    <li class="stat-content-item">
+                        <h3 class="stat-content-item__title stat-content-item__title--small">1.500.000</h3> <span class="stat-content-item__subtitle">Spend</span> </li>
+                </ul>
+            </li>
+            <li class="stat">
+                <h2 class="stat__title">Gain new subscribers</h2>
+                <ul class="stat-content">
+                    <li class="stat-content-item">
+                        <h3 class="stat-content-item__title">220.000</h3> <span class="stat-content-item__subtitle">Media generated subscribers</span> </li>
+                    <li class="stat-content-item">
+                        <h3 class="stat-content-item__title stat-content-item__title--small">70.000</h3> <span class="stat-content-item__subtitle">Spend</span> </li>
+                </ul>
+            </li>
         </ul>
-      </li>
-    </ul>
-  </section>
-  <!-- End of Stats -->
+    </section>
+    <!-- End of Stats -->
+    <!-- Table -->
+    <section class="table">
+        <h1 class="table__title">Campaigns</h1>
+        <div class="table__row">
+            <button type="button" name="button" class="button blackwood-theme">Create new</button>
+            <div class="switch">
+                <div class="switch-button"> 
+                    <input class="switch-button--radio" type="radio" name="switch--campaigns" value="list" checked> 
+                    <label>
+                        <span class="switch-button--text">List</span>
+                    </label>                    
+                </div>
+                <label class="switch-button"> 
+                    <input class="switch-button--radio" type="radio" name="switch--campaigns" value="timeline"> 
+                    <label>
+                        <span class="switch-button--text">Timeline</span>                    
+                    </label>
+                </label>
+            </div>
+        </div>
+        <table class="table__content" cellpadding="0" cellspacing="0" border="0">
+            <tr class="table-row-header">
+                <th class="table-row-header table-row-header--campaign"> Campaign name </th>
+                <th class="table-row-header table-row-header--status"> Status </th>
+                <th class="table-row-header table-row-header--marketing"> Marketing goal </th>
+                <th class="table-row-header table-row-header--tags"> Tags </th>
+                <th class="table-row-header table-row-header--date active"> Date </th>
+            </tr>
+            <tr>
+                <td class="table-row-body"> Campaign 27 </td>
+                <td class="table-row-body status-indicator status-indicator--orange"> Prediction </td>
+                <td class="table-row-body"> Raise awarness </td>
+                <td class="table-row-body"> Brand BW7 </td>
+                <td class="table-row-body"> 01/06/16-31/08/16 </td>
+            </tr>
+            <tr>
+                <td class="table-row-body"> Campaign 3 </td>
+                <td class="table-row-body status-indicator status-indicator--orange"> Prediction </td>
+                <td class="table-row-body"> Gain new subscribers </td>
+                <td class="table-row-body"> Product Newsletter </td>
+                <td class="table-row-body"> 01/02/16-30/02/16 </td>
+            </tr>
+            <tr>
+                <td class="table-row-body"> Campaign 9 </td>
+                <td class="table-row-body status-indicator status-indicator--orange"> Prediction </td>
+                <td class="table-row-body"> Gain new subscribers </td>
+                <td class="table-row-body"> Product Newsletter </td>
+                <td class="table-row-body"> 15/01/16-31/03/16 </td>
+            </tr>
+            <tr>
+                <td class="table-row-body"> Campaign 22 </td>
+                <td class="table-row-body status-indicator status-indicator--green"> Running </td>
+                <td class="table-row-body"> Raise awarness </td>
+                <td class="table-row-body"> Brand BW7: Product RTPM </td>
+                <td class="table-row-body"> 01/06/16-31/08/16 </td>
+            </tr>
+            <tr>
+                <td class="table-row-body"> Campaign 4 </td>
+                <td class="table-row-body status-indicator status-indicator--green"> Running </td>
+                <td class="table-row-body"> Raise sales </td>
+                <td class="table-row-body"> Product: RTPM </td>
+                <td class="table-row-body"> 15/12/16-15/01/16 </td>
+            </tr>
+            <tr>
+                <td class="table-row-body"> Campaign 2 </td>
+                <td class="table-row-body status-indicator status-indicator--blue"> Finished </td>
+                <td class="table-row-body"> Raise awarness </td>
+                <td class="table-row-body"> Product: RTPM </td>
+                <td class="table-row-body"> 01/12/16-31/12/16 </td>
+            </tr>
+        </table>
+    </section>
+    <!-- End of Table -->
+    <!-- Materials -->
+    <section class="materials">
+        <h1 class="materials__title">Creative materials</h1>
+        <div class="materials__row">
+            <button type="button" name="button" class="button blackwood-theme">Upload new</button>
+        </div>
+        <ul class="materials-filter">
+            <li class="materials-filter__item">
+                <input type="checkbox" name="name" value="all">
+                <label for="all">All</label>
+            </li>
+            <li class="materials-filter__item">
+                <input type="checkbox" name="name" value="tv">
+                <label for="all">TV</label>
+            </li>
+            <li class="materials-filter__item">
+                <input type="checkbox" name="name" value="radio">
+                <label for="all">Radio</label>
+            </li>
+            <li class="materials-filter__item">
+                <input type="checkbox" name="name" value="print">
+                <label for="all">Print</label>
+            </li>
+            <li class="materials-filter__item">
+                <input type="checkbox" name="name" value="outdoor">
+                <label for="all">Outdoor</label>
+            </li>
+            <li class="materials-filter__item">
+                <input type="checkbox" name="name" value="online">
+                <label for="all">Online</label>
+            </li>
+        </ul>
+        <ul class="materials-list">
+            <li class="materials-list-item">
+                <div class="materials-list-wrapper-image image-material-1"></div>
+                <div class="materials-list-item-content">
+                    <h4 class="materials-list-item-content__title">The truth</h4> <span class="materials-list-item-content__subtitle">Print</span> </div>
+            </li>
+            <li class="materials-list-item">
+                <div class="materials-list-wrapper-image image-material-2 video-player"></div>
+                <div class="materials-list-item-content">
+                    <h4 class="materials-list-item-content__title">Summer campaign 3</h4> <span class="materials-list-item-content__subtitle">TV</span> </div>
+            </li>
+            <li class="materials-list-item">
+                <div class="materials-list-wrapper-image image-material-3"></div>
+                <div class="materials-list-item-content">
+                    <h4 class="materials-list-item-content__title">Job fair banner</h4> <span class="materials-list-item-content__subtitle">Outdoor</span> </div>
+            </li>
+            <li class="materials-list-item">
+                <div class="materials-list-wrapper-image image-material-4"></div>
+                <div class="materials-list-item-content">
+                    <h4 class="materials-list-item-content__title">Offer free trial</h4> <span class="materials-list-item-content__subtitle">Online</span> </div>
+            </li>
+        </ul>
+    </section>
+    <!-- End of Materials -->
+    <!-- Footer -->
+    <footer class="footer"> <span class="footer__copyright">® 2016 Blackwood Seven A/S</span> <a href="#" class="footer__feedback">Feedback</a>
+        <ul class="footer-social">
+            <li class="footer-social__item">
+                <a href="#"> <img src="./assets/facebook.png" alt="facebook" /> </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="#"> <img src="./assets/twitter.png" alt="twitter" /> </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="#"> <img src="./assets/linkedin.png" alt="linkedin" /> </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+</body>
 
-  <!-- Table -->
-  <section class="table">
-    <h1 class="table__title">Campaigns</h1>
-    <div class="table__row">
-      <button type="button" name="button" class="button blackwood-theme">Create new</button>
-      <div class="switch">
-        <label class="switch-button">
-            <span class="switch-button--text">List</span>
-            <input class="switch-button--radio" type="radio" name="name" value="list">
-        </label>
-        <label class="switch-button">
-            <span class="switch-button--text">Timeline</span>
-            <input class="switch-button--radio" type="radio" name="name" value="timeline">
-        </label>
-      </div>
-    </div>
-    <table class="table__content" cellpadding="0" cellspacing="0" border="0">
-      <tr class="table-row-header">
-        <th class="table-row-header table-row-header--campaign">
-          Campaign name
-        </th>
-        <th class="table-row-header table-row-header--status">
-Status
-        </th>
-        <th class="table-row-header table-row-header--marketing">
-Marketing goal
-        </th>
-        <th class="table-row-header table-row-header--tags">
-Tags
-        </th>
-        <th class="table-row-header table-row-header--date active">
-Date
-        </th>
-      </tr>
-      <tr>
-        <td class="table-row-body">
-Campaign 27
-        </td>
-        <td class="table-row-body status-indicator status-indicator--orange">
-Prediction
-        </td>
-        <td class="table-row-body">
-Raise awarness
-        </td>
-        <td class="table-row-body">
-Brand BW7
-        </td>
-        <td class="table-row-body">
-01/06/16-31/08/16
-        </td>
-      </tr>
-        <tr>
-        <td class="table-row-body">
-Campaign 3
-        </td>
-        <td class="table-row-body status-indicator status-indicator--orange">
-Prediction
-        </td>
-        <td class="table-row-body">
-Gain new subscribers
-        </td>
-        <td class="table-row-body">
-Product Newsletter
-        </td>
-        <td class="table-row-body">
-01/02/16-30/02/16
-        </td>
-      </tr>
-        <tr>
-        <td class="table-row-body">
-Campaign 9
-        </td>
-        <td class="table-row-body status-indicator status-indicator--orange">
-Prediction
-        </td>
-        <td class="table-row-body">
-Gain new subscribers
-        </td>
-        <td class="table-row-body">
-Product Newsletter
-        </td>
-        <td class="table-row-body">
-15/01/16-31/03/16
-        </td>
-      </tr>
-        <tr>
-        <td class="table-row-body">
-Campaign 22
-        </td>
-        <td class="table-row-body status-indicator status-indicator--green">
-Running
-        </td>
-        <td class="table-row-body">
-Raise awarness
-        </td>
-        <td class="table-row-body">
-Brand BW7: Product RTPM
-        </td>
-        <td class="table-row-body">
-01/06/16-31/08/16
-        </td>
-      </tr>
-        <tr>
-        <td class="table-row-body">
-Campaign 4
-        </td>
-        <td class="table-row-body status-indicator status-indicator--green">
-Running
-        </td>
-        <td class="table-row-body">
-Raise sales
-        </td>
-        <td class="table-row-body">
-Product: RTPM
-        </td>
-        <td class="table-row-body">
-15/12/16-15/01/16
-        </td>
-      </tr>
-        <tr>
-        <td class="table-row-body">
-Campaign 2
-        </td>
-        <td class="table-row-body status-indicator status-indicator--blue">
-Finished
-        </td>
-        <td class="table-row-body">
-Raise awarness
-        </td>
-        <td class="table-row-body">
-Product: RTPM
-        </td>
-        <td class="table-row-body">
-01/12/16-31/12/16
-        </td>
-      </tr>
-    </table>
-  </section>
-  <!-- End of Table -->
-
-  <!-- Materials -->
-  <section class="materials">
-    <h1 class="materials__title">Creative materials</h1>
-    <div class="materials__row">
-      <button type="button" name="button" class="button blackwood-theme">Upload new</button>
-    </div>
-    <ul class="materials-filter">
-      <li class="materials-filter__item">
-        <input type="checkbox" name="name" value="all">
-        <label for="all">All</label>
-      </li>
-      <li class="materials-filter__item">
-        <input type="checkbox" name="name" value="tv">
-        <label for="all">TV</label>
-      </li>
-      <li class="materials-filter__item">
-        <input type="checkbox" name="name" value="radio">
-        <label for="all">Radio</label>
-      </li>
-      <li class="materials-filter__item">
-        <input type="checkbox" name="name" value="print">
-        <label for="all">Print</label>
-      </li>
-      <li class="materials-filter__item">
-        <input type="checkbox" name="name" value="outdoor">
-        <label for="all">Outdoor</label>
-      </li>
-      <li class="materials-filter__item">
-        <input type="checkbox" name="name" value="online">
-        <label for="all">Online</label>
-      </li>
-    </ul>
-    <ul class="materials-list">
-      <li class="materials-list-item">
-        <div class="materials-list-wrapper-image">
-          <img src="./assets/Material 1.png" alt="Material 1" />
-        </div>
-          <div class="materials-list-item-content">
-        <h4 class="materials-list-item-content__title">The truth</h4>
-        <span class="materials-list-item-content__subtitle">Print</span>
-              </div>
-      </li>
-      <li class="materials-list-item">
-        <div class="materials-list-wrapper-image">
-          <img src="./assets/Material 2.png" alt="Material 2" />
-        </div>
-          <div class="materials-list-item-content">
-        <h4 class="materials-list-item-content__title">Summer campaign 3</h4>
-        <span class="materials-list-item-content__subtitle">TV</span>
-              </div>
-      </li>
-      <li class="materials-list-item">
-        <div class="materials-list-wrapper-image">
-          <img src="./assets/Material 3.png" alt="Material 3" />
-        </div>
-          <div class="materials-list-item-content">
-        <h4 class="materials-list-item-content__title">Job fair banner</h4>
-        <span class="materials-list-item-content__subtitle">Outdoor</span>
-              </div>
-      </li>
-      <li class="materials-list-item">
-        <div class="materials-list-wrapper-image">
-          <img src="./assets/Material 4.png" alt="Material 4" />
-        </div>
-        <div class="materials-list-item-content">
-            <h4 class="materials-list-item-content__title">Offer free trial</h4>
-            <span class="materials-list-item-content__subtitle">Online</span>            
-        </div>
-      </li>
-    </ul>
-  </section>
-  <!-- End of Materials -->
-
-  <!-- Footer -->
-  <footer class="footer">
-    <span class="footer__copyright">® 2016 Blackwood Seven A/S</span>
-    <a href="#" class="footer__feedback">Feedback</a>
-    <ul class="footer-social">
-      <li class="footer-social__item">
-        <a href="#">
-          <img src="./assets/facebook.png" alt="facebook" />
-        </a>
-      </li>
-      <li class="footer-social__item">
-        <a href="#">
-          <img src="./assets/twitter.png" alt="twitter" />
-        </a>
-      </li>
-      <li class="footer-social__item">
-        <a href="#">
-          <img src="./assets/linkedin.png" alt="linkedin" />
-        </a>
-      </li>
-    </ul>
-  </footer>
-  <!-- End of Footer -->
-  </body>
 </html>
