@@ -1,0 +1,63 @@
+
+.materials {
+    margin: 0 75px 65px;
+}
+
+.materials__title {
+    color: #434242;
+    font: 400 20px LabGrotesque;
+    margin-bottom: 25px;
+}
+
+.materials__row {
+    margin-bottom: 50px;
+}
+
+.materials-filter {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.materials-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 120px;
+}
+
+.materials-list-item {
+    width: 186px;
+    margin-right: 30px;
+    box-shadow: 1px 2px 0px 0.00px rgba(219, 219, 219, 0.75);
+}
+
+.materials-list-wrapper-image {
+    height: 122px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.materials-list-wrapper-image img {
+    width: 100%;
+    height: auto;
+}
+
+.materials-list-item-content__title {
+    color: #434242;
+    font: 400 16px LabGrotesque;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.materials-list-item-content__subtitle {
+    color: #68a2cc;
+    font: 400 12px LabGrotesque;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.materials-list-item-content {
+    padding: 15px 20px 20px;
+    background-color: #ffffff;
+}
