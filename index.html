@@ -2,49 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Blackwood Test</title>
+    <title>Blackwood</title>
     <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
   <!-- Header -->
-  <header>
-    <img src="" alt="" />
-    <ul>
-
+  <header class="header">
+    <img src="./assets/bw7_logo_white.png" alt="bw7 logo" class="header__logo" />
+    <ul class="header-links">
+      <li class="header-links__link">Predict</li>
+      <li class="header-links__link">Manage</li>
+      <li class="header-links__link">Evaluate</li>
     </ul>
-    <div class="">
-
+    <div class="header-profile">
+      <span class="header-profile__name">Client name</span>
+      <span class="header-profile__settings">Account settings</span>
     </div>
   </header>
   <!-- End of Header -->
 
   <!-- Stats -->
-  <section>
-    <h1></h1>
-    <ul>
-      <li>
-        <h2></h2>
-        <ul>
-          <li>
-            <h3></h3>
-            <span></span>
+  <section class="stats">
+    <h1 class="stats__title">KPI status</h1>
+    <ul class="stats__list">
+      <li class="stat">
+        <h2 class="stat__title">Raise sales</h2>
+        <ul class="stat-content">
+          <li class="stat-content__item">
+            <h3>2.750.000</h3>
+            <span>Media generated sales</span>
           </li>
-          <li>
-            <h3></h3>
-            <span></span>
+          <li class="stat-content__item">
+            <h3>1.500.000</h3>
+            <span>Spend</span>
           </li>
         </ul>
       </li>
-      <li>
-        <h2></h2>
-        <ul>
-          <li>
-            <h3></h3>
-            <span></span>
+      <li class="stat">
+        <h2 class="stat__title">Gain new subscribers</h2>
+        <ul class="stat-content">
+          <li class="stat-content__item">
+            <h3>220.000</h3>
+            <span>Media generated subscribers</span>
           </li>
-          <li>
-            <h3></h3>
-            <span></span>
+          <li class="stat-content__item">
+            <h3>70.000</h3>
+            <span>Spend</span>
           </li>
         </ul>
       </li>
@@ -53,48 +56,50 @@
   <!-- End of Stats -->
 
   <!-- Table -->
-  <section>
-    <h1></h1>
-    <div class="">
-      <button type="button" name="button"></button>
-      <div class="">
-        <input type="radio" name="name" value="">
-        <input type="radio" name="name" value="">
+  <section class="table">
+    <h1 class="table__title">Campaigns</h1>
+    <div class="table__row">
+      <button type="button" name="button" class="button blackwood-theme">Create new</button>
+      <div class="switch blackwood-theme">
+        <label for="list">List</label>
+        <input type="radio" name="name" value="list">
+        <label for="timeline">Timeline</label>
+        <input type="radio" name="name" value="timeline">
       </div>
     </div>
-    <table>
-      <th>
-        <td>
-
-        </td>
-        <td>
-
-        </td>
-        <td>
-
-        </td>
-        <td>
-
-        </td>
-        <td>
-
-        </td>
-      </th>
+    <table class="table__content">
+      <tr>
+        <th>
+          Campaign name
+        </th>
+        <th>
+Status
+        </th>
+        <th>
+Marketing goal
+        </th>
+        <th>
+Tags
+        </th>
+        <th>
+Date
+        </th>
+      </tr>
       <tr>
         <td>
-
+Campaign 27
         </td>
         <td>
-
+Prediction
         </td>
         <td>
-
+Raise awarness
         </td>
         <td>
-
+Brand BW7
         </td>
         <td>
-
+01/06/16-31/08/16
         </td>
       </tr>
       <!-- 5 remaining -->
@@ -103,42 +108,90 @@
   <!-- End of Table -->
 
   <!-- Materials -->
-  <section>
-    <h1></h1>
-    <div class="">
-      <button type="button" name="button"></button>
+  <section class="materials">
+    <h1 class="materials__title">Creative materials</h1>
+    <div class="materials__row">
+      <button type="button" name="button" class="button blackwood-theme">Upload new</button>
     </div>
-    <ul>
-      <li>
-        <input type="checkbox" name="name" value="">
-        <label for=""></label>
+    <ul class="materials-filter">
+      <li class="materials-filter__item">
+        <input type="checkbox" name="name" value="all">
+        <label for="all">All</label>
       </li>
-      <!-- 5 remaining -->
+      <li class="materials-filter__item">
+        <input type="checkbox" name="name" value="tv">
+        <label for="all">TV</label>
+      </li>
+      <li class="materials-filter__item">
+        <input type="checkbox" name="name" value="radio">
+        <label for="all">Radio</label>
+      </li>
+      <li class="materials-filter__item">
+        <input type="checkbox" name="name" value="print">
+        <label for="all">Print</label>
+      </li>
+      <li class="materials-filter__item">
+        <input type="checkbox" name="name" value="outdoor">
+        <label for="all">Outdoor</label>
+      </li>
+      <li class="materials-filter__item">
+        <input type="checkbox" name="name" value="online">
+        <label for="all">Online</label>
+      </li>
     </ul>
-    <ul>
-      <li>
+    <ul class="materials-list">
+      <li class="materials-list__item">
         <div class="">
-
+          <img src="./assets/Material 1.png" alt="Material 1" />
         </div>
-        <h4></h4>
-        <span></span>
+        <h4>The truth</h4>
+        <span>Print</span>
       </li>
-      <!-- 3 remaining -->
+      <li class="materials-list__item">
+        <div class="materials-list-wrapper-image">
+          <img src="./assets/Material 2.png" alt="Material 2" />
+        </div>
+        <h4>Summer campaign 3</h4>
+        <span>TV</span>
+      </li>
+      <li class="materials-list__item">
+        <div class="materials-list-wrapper-image">
+          <img src="./assets/Material 3.png" alt="Material 3" />
+        </div>
+        <h4>Job fair banner</h4>
+        <span>Outdoor</span>
+      </li>
+      <li class="materials-list__item">
+        <div class="materials-list-wrapper-image">
+          <img src="./assets/Material 4.png" alt="Material 4" />
+        </div>
+        <h4>Offer free trial</h4>
+        <span>Online</span>
+      </li>
     </ul>
   </section>
   <!-- End of Materials -->
 
   <!-- Footer -->
-  <footer>
-    <span></span>
-    <a href="#"></a>
-    <ul>
-      <li>
+  <footer class="footer">
+    <span class="footer__copyright">® 2016 Blackwood Seven A/S</span>
+    <a href="#" class="footer__feedback">Feedback</a>
+    <ul class="footer-social">
+      <li class="footer-social__item">
         <a href="#">
-          <img src="" alt="" />
+          <img src="./assets/facebook.png" alt="facebook" />
         </a>
       </li>
-      <!-- 3 more remaining -->
+      <li class="footer-social__item">
+        <a href="#">
+          <img src="./assets/twitter.png" alt="twitter" />
+        </a>
+      </li>
+      <li class="footer-social__item">
+        <a href="#">
+          <img src="./assets/linkedin.png" alt="linkedin" />
+        </a>
+      </li>
     </ul>
   </footer>
   <!-- End of Footer -->

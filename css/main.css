@@ -1,3 +1,4 @@
+@import "utils/reset.css";
 @import "header/header.css";
 @import "sections/stats/stats.css";
 @import "sections/table/table.css";

@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Light.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-LightItalic.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-LightItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-LightItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Italic.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-MediumItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Black.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Black.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LabGrotesque';
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BlackItalic.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BlackItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BlackItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../assets/Lab Grotesque Web/LabGrotesqueWeb-BlackItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-weight: 800;
+  font-style: italic;
+}

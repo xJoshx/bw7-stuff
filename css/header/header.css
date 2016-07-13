@@ -1,3 +1,42 @@
-header {
-  
+.header {
+    background-color: #292929;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header-links__link {
+    width: 155px;
+    color: #ffffff;
+    font: 400 20px / 72px LabGrotesque;
+}
+
+.header__logo {
+    display: block;
+    width: 79px;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-links__link.active {
+    background-color: #1a1b1d;
+}
+
+.header-profile {
+    width: 106px;
+}
+
+.header-profile__name {
+    color: #ffffff;
+    font: 500 18px / 70px LabGrotesque;
+    text-align: center;
+}
+
+.header-profile__settings {
+    color: #68a2cc;
+    font: 500 14px / 70px LabGrotesque;
+    text-align: center;
 }
