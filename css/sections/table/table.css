@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;    
+    max-width: 1200px;
 }
 
 .table {
@@ -20,6 +21,7 @@
 .table__content {
     width: 100%;
     border: 1px solid #e8e8e8;
+    max-width: 1200px;
 }
 
 .table-row-body {
