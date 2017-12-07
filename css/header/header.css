@@ -20,6 +20,7 @@
     width: auto;
     margin: 12px 50px 13px 15px;
     height: 54px;
+    cursor: pointer;
 }
 
 .header-links {
@@ -47,4 +48,5 @@
     color: #68a2cc;
     font: 500 14px LabGrotesque;
     text-align: center;
+    cursor: pointer;
 }
